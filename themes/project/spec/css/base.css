@@ -1,0 +1,10 @@
+/* This file is for base styling - universal reset/styles for basic elements on the site. */
+*{
+  box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+main{
+  overflow: hidden;
+}

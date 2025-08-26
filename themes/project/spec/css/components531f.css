@@ -1,0 +1,260 @@
+/* This file is for styling any of the components of the site. It belongs here if: 
+    1) it isn't a universal / base style for an HTML element (that goes in base.css)
+    2) It isn't related to the basic layout/structure of the site throughout (that goes in layout.css)
+    3) It isn't related to color or font style (that goes in theme.css)
+  Everything else goes here. Be sure to make a comment if you are adding styles for a new component, OR if 
+  this file gets big enough, split it out into a subfolder of files by component and update libraries.yml. */
+
+h1.page-title {
+  font-weight: 300;
+}
+footer img{
+	height: 80px;
+	margin-right: 20px;
+	width: auto;
+}
+
+footer ul li.menu-item a{
+	color: white;
+}
+
+body.node__content .view-content{
+	margin: 0 20px 0 20px;
+}
+
+body .node__content {
+	padding: 5px 20px;
+}
+
+/* Main navigation */
+#block-mainnavigation .contextual{
+	display: none;
+}
+.contextual.open{
+	display: inline-block;
+}
+#block-sitebranding{
+	padding-top: 35px;
+}
+#block-mainnavigation {
+	text-align: center;
+	padding-top: 70px; 
+	padding-bottom: 20px;
+}
+#block-mainnavigation ul {
+    position: relative;
+    text-align: center;
+	padding-top: 15px;
+	display: inline-block;
+	margin: 0;
+}
+#block-mainnavigation ul::before{
+	content: "";
+	display: block;
+	background: linear-gradient(to right, #75082e 0%,#E0285C 100%);
+	position: absolute;
+	left: 0;
+	top: -2px;
+	height: 2px;
+	width: 100%;
+}
+
+#block-mainnavigation li.menu-item {
+	display: inline-block;
+	padding: 5px 25px;
+	position: relative;
+	padding-left: 35px;
+	margin-right: 40px;
+}
+#block-mainnavigation li.menu-item:last-child{
+	margin-right: 0;
+}
+.menu-dropdown.menu_link_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#block-mainnavigation li.menu-item .field--type-image{
+	position: absolute;
+	left: 0;
+	top:3px;
+}
+#block-mainnavigation li.menu-item .field--type-image img{
+	height: auto;
+	width: 25px;
+}
+
+#block-mainnavigation li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/* Node Pages */
+body .node__content img {
+	float: left;
+    padding-right: 20px;
+}
+/* Front page */
+.view-frontpage .views-row{
+	overflow: hidden;
+	padding: 20px 15px;
+	box-sizing: border-box;
+}
+footer .views-field-changed{
+	color: white;
+	padding: 0 15px;
+}
+footer .views-field-changed a{
+	color: white;
+	padding: 0 15px;
+}
+.view-frontpage .views-row:nth-child(1) .views-field-body img{
+	width: 50%;
+	height: auto;
+	margin-left: 20px;
+}
+.view-frontpage .views-row:nth-child(1){
+	overflow: hidden;
+}
+.view-frontpage .views-row:nth-child(1) .views-field-body p{
+	margin: 0;	
+	font-size: 18px;
+}
+.view-frontpage .views-row:nth-child(2) .views-field-body img{
+	width: 25%;
+	height: auto;
+	margin-right: 50px;
+}
+.view-frontpage .views-row:nth-child(2){
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+/* People Page */
+.view-team-members{
+	overflow: hidden;
+	padding: 10px 20px;
+}
+.view-team-members .views-row {
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	height: 180px;
+}
+.view-team-members .views-row:nth-child(3n+1){
+	clear: left;
+}
+.view-team-members .views-row:nth-child(3n+0){
+	margin-right: 0;
+}
+.view-team-members .views-field-field-image{
+	position: absolute;
+	width: 50%;
+	left: 0;
+	top: 0;
+}
+.view-team-members .views-field-field-image img{
+	width: auto;
+	height: 100%;
+}
+.views-field-field-first-name{
+	padding-left: 130px;
+	padding-right: 15px;
+}
+.views-field-field-last-name{
+	padding-left: 130px;
+	padding-right: 15px;
+}
+.views-field-field-position{
+	padding-left: 130px;
+	padding-right: 15px;
+}
+
+/* News Page */
+/*.view-id-news {
+	margin: 0 50px !important;
+}*/
+.view-id-news .view-content .views-row {
+	padding-bottom: 30px;
+}
+.view-news .views-row .views-field-field-image img {
+	float: left;
+	padding-right: 15px;
+}
+
+/* Events Page */
+/*.view-id-events {
+	margin: 0 50px !important;
+}*/
+.view-id-events .view-content .views-row {
+	padding-bottom: 30px;
+}
+
+.view-id-events .views-field-field-image .field-content img {
+	float: left;
+	padding-right: 15px;
+}
+
+/* Paragraphs */
+.paragraph--type-mega-header{
+	overflow: hidden;
+}
+.paragraph--type-mega-header  .paragraph--type--body{
+	padding-bottom: 30px;
+	font-size: 18px;
+}
+.paragraph--type-grid{
+	padding: 5px 20px;
+}
+.paragraph--type--heading{
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.field--name-field-view-title{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.paragraph--type--image img{
+	width: 100%;
+	height: auto;
+}
+.paragraph--type-mega-header .paragraph--type--body table th,.paragraph--type-mega-header  .paragraph--type--body table td{
+	text-align: center;
+	padding: 5px;
+}
+.paragraph--type-mega-header .paragraph--type--body table td:last-child,.paragraph--type--body table th:last-child{	
+	border-right: none;
+}
+.paragraph--type-mega-header .paragraph--type--body table tr:last-child td{	
+	border-bottom: none;
+}
+.paragraph--type-mega-header .paragraph--type--body table{
+	margin: 20px 0;
+}
+.paragraph--type--link-button{
+	padding: 0 20px;
+	margin-bottom: 10px;
+}
+.paragraph--type--link-button a{
+	padding: 6px 15px;
+	text-decoration: none;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.paragraph--type-grid .grid{
+	padding-right: 10px;
+}
+
+.paragraph--type-grid .grid:last-child{
+	padding-right: 0px;
+}

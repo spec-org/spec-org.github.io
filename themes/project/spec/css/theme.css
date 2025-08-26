@@ -1,0 +1,107 @@
+/* This file is only for color and font styles. */
+*{
+	font-family: "Nunito Sans";
+}
+a {
+	color: #0E4490;
+}
+header {	
+	background: url('../img/spec_header.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 200px;
+	position: relative;
+}
+header::before{
+	content: "";
+	display: block;
+	background: linear-gradient(to right, #75082e 0%,#E0285C 100%);
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	width: 100%;
+}
+header .slogan{
+	color: #fff;
+	font-size: 28px;
+	font-weight: 600;
+	padding-top: 5px;
+}
+#block-spec-branding{
+	margin-top: 50px;
+}
+main{
+	background: #ffffff;
+}
+body{
+	background: #eee;
+}
+footer{
+	background: linear-gradient(45deg, #001741 0%,#003a60 100%);
+	padding: 20px 15px;
+	position: relative;
+}
+footer::before{
+	content: "";
+	display: block;
+	background: linear-gradient(to right, #75082e 0%,#E0285C 100%);
+	position: absolute;
+	left: 0;
+	top: -2px;
+	height: 2px;
+	width: 100%;
+}
+/* Main navigation */
+#block-mainnavigation li a {
+	color: #fff;
+}
+/* Front page */
+.view-frontpage .views-row:nth-child(1){
+	background: #0E4490;
+}
+.view-frontpage .views-row:nth-child(1) .views-field-body p{
+	color: #fff;
+}
+.view-frontpage .views-row .views-field-body a{
+	color: #d47827;
+}
+/* People page */
+.view-team-members .views-row {
+	background: #d5e0ee;
+}
+/* Paragraphs */
+.paragraph--type-mega-header{
+	background: #0E4490;
+	color: #fff;
+}
+.paragraph--type-mega-header a{
+	color: #BBEDFF;
+}
+.paragraph--type-grid .paragraph--type--heading, .field--name-field-view-title{
+	color: #0E4490;
+}
+.paragraph--type--body table th{
+	background: #d47827;
+}
+.paragraph--type--body table td{
+	color: #000;
+	background: #fff;
+}
+.paragraph--type-mega-header .paragraph--type--body table th,.paragraph--type-mega-header  .paragraph--type--body table td{
+	border-right: 10px solid #0E4490;
+	border-bottom: 10px solid #0E4490;
+}
+.paragraph--type-mega-header table a{
+	color: #d47827;
+}
+.paragraph--type--link-button a{
+	background: linear-gradient(to bottom, #eee 11%,#ddd 100%);
+	color: #222;
+	border:1px solid #c68515;
+	box-shadow: rgba(0,0,0,0.5) 1px 1px 3px;
+}
+.paragraph--type--link-button a:hover{
+	border:1px solid #555;
+	box-shadow: rgba(0,0,0,0.7) 1px 1px 3px;
+}
