@@ -449,7 +449,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   };
   Drupal.theme.ajaxWrapperNewContent = function ($newContent, ajax, response) {
     return (response.effect || ajax.effect) !== 'none' && $newContent.filter(function (i) {
-      return !($newContent[i].nodeName === '#comment' || $newContent[i].nodeName === '#text' && /^(\s|\n|\r)*$/.test($newContent[i].textContent));
+      return !($newContent[i].nodeName === '#comment' || $newContent[i].nodeName === '#text' && /^\s*$/.test($newContent[i].textContent));
     }).length > 1 ? Drupal.theme('ajaxWrapperMultipleRootElements', $newContent) : $newContent;
   };
   Drupal.theme.ajaxWrapperMultipleRootElements = function ($elements) {
