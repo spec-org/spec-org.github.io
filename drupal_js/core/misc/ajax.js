@@ -78,7 +78,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         '!responseText': xmlhttp.responseText.trim()
       }));
     } catch (e) {}
-    responseText = responseText.replace(/<("[^"]*"|'[^']*'|[^'">])*>/gi, '');
+    responseText = responseText.replace(/[<>]/g, '');
     responseText = responseText.replace(/[\n]+\s+/g, '\n');
     var readyStateText = xmlhttp.status === 0 ? "\n".concat(Drupal.t('ReadyState: !readyState', {
       '!readyState': xmlhttp.readyState
